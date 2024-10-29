@@ -169,7 +169,7 @@ Error generating stack: `+s.message+`
   display: flex;
   justify-content: center;
   padding: 2rem;
-  background-color: #00030d5e;
+  background-color: #0d11173d;
   color: #fffbfb;
   flex-direction: column;
   align-items: center;
