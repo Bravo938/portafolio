@@ -352,7 +352,7 @@ Error generating stack: `+s.message+`
   justify-content: center;
   gap: 1rem; /* Espaciado entre íconos */
   color: #00d0ff; /* Color de los íconos */
-`;function B6(){return S.jsxs(S.Fragment,{children:[S.jsx(m6,{}),S.jsx(vy,{}),S.jsx(B5,{}),S.jsx(i6,{}),S.jsx(v6,{}),S.jsx($6,{}),S.jsx(C6,{}),S.jsx(gy,{})]})}function H6(){return S.jsx(S.Fragment,{children:S.jsx(ny,{children:S.jsx(Q0,{path:"/",element:S.jsx(B6,{})})})})}const U6=M.createContext(),V6=({children:e})=>{const[t,n]=M.useState(null);return S.jsx(U6.Provider,{value:{auth:t,setAuth:n},children:e})};var W6={exports:{}};/*!
+`;function B6(){return S.jsxs(S.Fragment,{children:[S.jsx(m6,{}),S.jsx(vy,{}),S.jsx(B5,{}),S.jsx(i6,{}),S.jsx(v6,{}),S.jsx($6,{}),S.jsx(C6,{}),S.jsx(gy,{})]})}function H6(){return S.jsx(S.Fragment,{children:S.jsx(ny,{children:S.jsx(Q0,{path:"/portafolio/",element:S.jsx(B6,{})})})})}const U6=M.createContext(),V6=({children:e})=>{const[t,n]=M.useState(null);return S.jsx(U6.Provider,{value:{auth:t,setAuth:n},children:e})};var W6={exports:{}};/*!
   * Bootstrap v5.3.3 (https://getbootstrap.com/)
   * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
