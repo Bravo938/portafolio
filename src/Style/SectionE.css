@@ -1,0 +1,139 @@
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+
+
+.fondo-clara {
+    color: black;
+    background-color: white;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 5px 0px;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+
+
+
+
+
+/* Experiencia */
+.experiencia {
+    padding: 40px 40px 60px 40px;
+   
+
+}
+
+.experiencia .columna {
+    padding: 40px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: #008ec8;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #008ec8;
+    background-color: #000;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+
+
+/* Adaptable, responsivo */
+
+/* Control del carrousel en dispositivos inferioes a 800px */
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+/* Iconos Overlay */
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 25px;
+    }
+    .overlay i {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+} 
+
+
+/* Achica la imagen del hero inferior  */
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}

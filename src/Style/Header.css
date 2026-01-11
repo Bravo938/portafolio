@@ -1,0 +1,111 @@
+/* Barra de navegacion */
+/* Header.css */
+.navbar-brand img {
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    width: 50px; /* Ajusta el ancho según tus necesidades */
+    height: 50px; /* Ajusta la altura según tus necesidades */
+}
+
+.navbar {
+    padding: 2rem;
+    background-color: #ffffff15;
+    
+    /*margin-bottom: 30px;*/
+    
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar-brand img{
+    width: 100px;
+  
+}
+
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 5px 0px;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    color: aqua;
+    
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.texto-negro {
+    color: white;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+
+
+
+
+/* Adaptable, responsivo */
+
+/* Control del carrousel en dispositivos inferioes a 800px */
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+/* Iconos Overlay */
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 25px;
+    }
+    .overlay i {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    
+    }
+} 
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+}

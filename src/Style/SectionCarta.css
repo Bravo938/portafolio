@@ -1,0 +1,30 @@
+/* Rectangle 11 */
+
+.Contenido-Carta{
+   margin-top: 30px;
+   margin-bottom: 30px;
+   
+    position: absolute;
+    width: 100%; /* Ajusta el ancho del div al 100% del contenedor */
+    height: 100vh; /* Ajusta la altura del div al 100% de la altura de la ventana */
+    background-position: center; /* Centra la imagen */
+    
+    background-image: url(../Image/fondoCarta.jpg);
+    
+}
+
+/* Rectangle 12 */
+.Contenido-Entrenamiento{
+position: absolute;
+text-align: center;
+width: 525px;
+height: 233px;
+left: 762px;
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+background-color: #008fc8;
+color: #FFFFFF;
+}

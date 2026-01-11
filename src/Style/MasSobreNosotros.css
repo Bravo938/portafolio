@@ -1,0 +1,87 @@
+.contenido-mas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    background-image: url('../Image/fondooscuro.png');
+    /*background-color: #1b1b32;*/
+    
+    background-size: cover; /* Ajusta la imagen para que cubra todo el div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    width: 100%; /* Ajusta el ancho del div al 100% del contenedor */
+    height: 100vh; /* Ajusta la altura del div al 100% de la altura de la ventana */
+   
+    
+    color: white;
+}
+
+.contenido-h2 {
+    max-width: 600px;
+    font-size: 3rem;
+    font-family: "Rubik Dirt", system-ui;
+    display: block;
+    width: 100vw; /* 100% del ancho de la ventana */
+    margin-left: -50vw; /* Negar la mitad del ancho de la ventana para alinear */
+    margin-right: -50vw; /* Negar la mitad del ancho de la ventana para alinear */
+    padding: 10px 50vw; /* Agregar relleno a la izquierda y derecha */
+    background-color: #008fc8; /* Color de fondo deseado */
+    color: white; /* Color del texto */
+    
+   
+    
+}
+.contenido-mas p{
+    max-width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Rubik Dirt", system-ui;
+}
+/* Adaptable, responsivo */
+
+/* Control del carrousel en dispositivos inferioes a 800px */
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+/* Iconos Overlay */
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 25px;
+    }
+    .overlay i {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+} 
+
+
+/* Achica la imagen del hero inferior  */
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+/*Achica la fuente del h2  */
+@media screen and (min-width: 700px){
+    .contenido-mas p{
+        
+        font-size: 2em; /* Aumenta el tamaño del h2 */
+         /* Espacio inferior entre el h2 y el párrafo */
+        
+    }
+}

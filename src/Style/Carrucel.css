@@ -1,0 +1,136 @@
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 5px 0px;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+/* Testimonios */
+.testimonios {
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+}
+
+.carousel-item {
+    height: 700px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Share Tech Mono", monospace
+}
+
+.testimonio-info{
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p {
+    margin-bottom: 0;
+}
+
+.testimonio-info .cliente {
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/* Adaptable, responsivo */
+
+/* Control del carrousel en dispositivos inferioes a 800px */
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+/* Iconos Overlay */
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 25px;
+    }
+    .overlay i {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+} 
+
+
+/* Achica la imagen del hero inferior  */
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
