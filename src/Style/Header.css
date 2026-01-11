@@ -13,12 +13,21 @@
     /*margin-bottom: 30px;*/
     
 }
+.nav-link:hover {
+    color: red; /* Cambia el color al pasar el mouse */
+}
+
+
+
+
 
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
     
+    
 }
+
 .navbar-brand img{
     width: 100px;
   

@@ -1,8 +1,228 @@
-@import"https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+@import "tailwindcss";
 
-*{
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+
+@theme {
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-cyan-500: #06b6d4;
+  --color-cyan-600: #0891b2;
+  --color-purple-500: #8b5cf6;
+  --color-purple-600: #7c3aed;
+  --color-pink-500: #ec4899;
+  --color-gray-900: #111827;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased bg-gray-950 text-gray-100;
+  }
+  
+  /* Eliminar estilos por defecto de botones */
+  button {
+    @apply border-none outline-none focus:outline-none focus:ring-0;
+  }
+}
+
+
+@theme {
+  /* Colores personalizados */
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-cyan-300: #67e8f9;
+  --color-cyan-400: #22d3ee;
+  --color-purple-400: #a78bfa;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+  
+  /* Animaciones personalizadas */
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes spin-slow-reverse {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 
+        0 0 5px theme('colors.blue.500'),
+        0 0 10px theme('colors.blue.500'),
+        0 0 15px theme('colors.cyan.500'),
+        0 0 20px theme('colors.cyan.500'),
+        inset 0 0 10px theme('colors.blue.500');
+    }
+    50% {
+      box-shadow: 
+        0 0 10px theme('colors.cyan.500'),
+        0 0 20px theme('colors.cyan.500'),
+        0 0 30px theme('colors.purple.500'),
+        0 0 40px theme('colors.purple.500'),
+        inset 0 0 20px theme('colors.cyan.500');
+    }
+  }
+  
+  @keyframes led-glow {
+    0%, 100% {
+      border-color: theme('colors.blue.500');
+      box-shadow: 
+        0 0 10px theme('colors.blue.500'),
+        inset 0 0 10px theme('colors.blue.500');
+    }
+    50% {
+      border-color: theme('colors.cyan.500');
+      box-shadow: 
+        0 0 20px theme('colors.cyan.500'),
+        inset 0 0 20px theme('colors.cyan.500');
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased bg-gray-950 text-gray-100;
+  }
+  
+  button, 
+  [type="button"], 
+  [type="reset"], 
+  [type="submit"] {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+  }
+  
+  .animate-spin-slow-reverse {
+    animation: spin-slow-reverse 15s linear infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+  
+  /* Efecto LED Neón */
+  .neon-border {
+    border: 4px solid transparent;
+    animation: led-glow 3s ease-in-out infinite;
+  }
+  
+  .neon-glow {
+    border-width: 4px;
+    animation: glow 3s ease-in-out infinite;
+  }
+  
+  /* Utilidades para texto */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* efectos SobreMi*/
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+.skill-bar:hover::after {
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Mejora las animaciones de Framer Motion */
+.skill-icon-enter {
+  animation: skillIconEnter 0.5s ease-out;
+}
+
+@keyframes skillIconEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotate(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+

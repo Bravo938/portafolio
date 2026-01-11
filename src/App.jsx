@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import MatrixBackground from './components/Matrix.jsx';
+
+
 import HomePage from './page/HomePage.jsx';
 
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <Routes>
         
-        <Route path="/" element={<HomePage />} />
+        <Route path="/portafolio/" element={<HomePage />} />
         
       </Routes>
     </>

@@ -1,10 +1,7 @@
 import Footer from "../components/Footer.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "../components/Header.jsx";
-import SectionC from "../components/SectionC.jsx";
-import SectionE from "../components/SectionE.jsx";
-import Carrucel from "../components/Carrucel.jsx";
-import Contacto from "../components/Contacto.jsx";
+import Contact from "../components/Contac.jsx";
 import SeccionPrin from "../components/SeccionPrin.jsx";
 import SobreMi from "../components/SobreMi.jsx";
 import MatrixBackground from '../components/Matrix.jsx';
@@ -22,9 +19,9 @@ export default function HomePage(){
         <ServicesSection/>
         <ExperienceSection/>
         <ProjectsSection/>
+        <Contact/>
         
         
-        <Footer></Footer>
         </>
     )
 };
